@@ -56,112 +56,106 @@ tBodyAccJerkMean
 tBodyGyroMean
 tBodyGyroJerkMean
 ```
-
-# Average Data Set Description
-1. A subset of the original data set was produced using R.
-1. The subset included only those original variables that were mean or standard deviation variables.
-1. The following list shows the columns of the data set.
-1. Each column name was a simplified version of the original name.
-1. The subscript "_ave" was included to indicate that the variable was an average of the measurements for a given subject for the given activity type.
-
-# Average of Mean and Standard Deviation Data Sets 
-##'data.frame':	10299 obs. of  82 variables:
-## Structure Information Header 
 ```
- $ activity                     : chr  "STANDING" "STANDING" "STANDING" "STANDING" ...
- $ subject_id                   : num  2 2 2 2 2 2 2 2 2 2 ...
- $ activity_id                  : num  5 5 5 5 5 5 5 5 5 5 ...
- $ tBodyAcc-mean-X              : num  0.257 0.286 0.275 0.27 0.275 ...
- $ tBodyAcc-mean-Y              : num  -0.0233 -0.0132 -0.0261 -0.0326 -0.0278 ...
- $ tBodyAcc-mean-Z              : num  -0.0147 -0.1191 -0.1182 -0.1175 -0.1295 ...
- $ tBodyAcc-std-X               : num  -0.938 -0.975 -0.994 -0.995 -0.994 ...
- $ tBodyAcc-std-Y               : num  -0.92 -0.967 -0.97 -0.973 -0.967 ...
- $ tBodyAcc-std-Z               : num  -0.668 -0.945 -0.963 -0.967 -0.978 ...
- $ tGravityAcc-mean-X           : num  0.936 0.927 0.93 0.929 0.927 ...
+# Average of Mean and Standard Deviation Data Sets 
+
+## Structure Information Header 
+'data.frame':	180 obs. of  81 variables:
+ $ activity                         : Factor w/ 6 levels "LAYING","SITTING",..: 4 6 5 2 3 1 4 6 5 2 ...
+ $ subject_id                       : Factor w/ 30 levels "1","10","11",..: 1 1 1 1 1 1 12 12 12 12 ...
+ $ tBodyAcc-mean-X_ave              : Factor w/ 180 levels "0.22159824394",..: 99 15 163 24 125 1 84 5 103 94 ...
+ $ tBodyAcc-mean-Y_ave              : Factor w/ 180 levels "-0.00130828765170213",..: 95 157 16 1 59 180 121 148 154 56 ...
+ $ tBodyAcc-mean-Z_ave              : Factor w/ 180 levels "-0.07537846886",..: 129 11 81 47 122 144 52 180 153 109 ...
+ $ tBodyAcc-std-X_ave               : Factor w/ 180 levels "-0.00865921919565217",..: 49 74 6 127 179 93 85 60 10 154 ...
+ $ tBodyAcc-std-Y_ave               : Factor w/ 180 levels "-0.00232026501698113",..: 40 1 11 113 171 92 25 36 77 147 ...
+ $ tBodyAcc-std-Z_ave               : Factor w/ 180 levels "-0.00771530035714285",..: 50 3 43 124 172 92 78 15 13 149 ...
+ $ tGravityAcc-mean-X_ave           : Factor w/ 180 levels "-0.134832031403509",..: 117 70 110 44 138 10 81 36 53 130 ...
+ $ tGravityAcc-mean-Y_ave           : Factor w/ 180 levels "-0.002814673171875",..: 127 147 123 78 125 165 143 153 136 37 ...
   [list output truncated]
 ```
-## Column Information
+
+## Column Descriptions
 ```
 >>> Col #  1 , Name:  activity 
->>> Col #  2 , Name:  subject_id , Range: 1 30 
->>> Col #  3 , Name:  activity_id , Range: 1 6 
->>> Col #  4 , Name:  tBodyAcc-mean-X , Range: -1 1 
->>> Col #  5 , Name:  tBodyAcc-mean-Y , Range: -1 1 
->>> Col #  6 , Name:  tBodyAcc-mean-Z , Range: -1 1 
->>> Col #  7 , Name:  tBodyAcc-std-X , Range: -1 1 
->>> Col #  8 , Name:  tBodyAcc-std-Y , Range: -1 1 
->>> Col #  9 , Name:  tBodyAcc-std-Z , Range: -1 1 
->>> Col #  10 , Name:  tGravityAcc-mean-X , Range: -1 1 
->>> Col #  11 , Name:  tGravityAcc-mean-Y , Range: -1 1 
->>> Col #  12 , Name:  tGravityAcc-mean-Z , Range: -1 1 
->>> Col #  13 , Name:  tGravityAcc-std-X , Range: -1 1 
->>> Col #  14 , Name:  tGravityAcc-std-Y , Range: -1 1 
->>> Col #  15 , Name:  tGravityAcc-std-Z , Range: -1 1 
->>> Col #  16 , Name:  tBodyAccJerk-mean-X , Range: -1 1 
->>> Col #  17 , Name:  tBodyAccJerk-mean-Y , Range: -1 1 
->>> Col #  18 , Name:  tBodyAccJerk-mean-Z , Range: -1 1 
->>> Col #  19 , Name:  tBodyAccJerk-std-X , Range: -1 1 
->>> Col #  20 , Name:  tBodyAccJerk-std-Y , Range: -1 1 
->>> Col #  21 , Name:  tBodyAccJerk-std-Z , Range: -1 1 
->>> Col #  22 , Name:  tBodyGyro-mean-X , Range: -1 1 
->>> Col #  23 , Name:  tBodyGyro-mean-Y , Range: -1 1 
->>> Col #  24 , Name:  tBodyGyro-mean-Z , Range: -1 1 
->>> Col #  25 , Name:  tBodyGyro-std-X , Range: -1 1 
->>> Col #  26 , Name:  tBodyGyro-std-Y , Range: -1 1 
->>> Col #  27 , Name:  tBodyGyro-std-Z , Range: -1 1 
->>> Col #  28 , Name:  tBodyGyroJerk-mean-X , Range: -1 1 
->>> Col #  29 , Name:  tBodyGyroJerk-mean-Y , Range: -1 1 
->>> Col #  30 , Name:  tBodyGyroJerk-mean-Z , Range: -1 1 
->>> Col #  31 , Name:  tBodyGyroJerk-std-X , Range: -1 1 
->>> Col #  32 , Name:  tBodyGyroJerk-std-Y , Range: -1 1 
->>> Col #  33 , Name:  tBodyGyroJerk-std-Z , Range: -1 1 
->>> Col #  34 , Name:  tBodyAccMag-mean , Range: -1 1 
->>> Col #  35 , Name:  tBodyAccMag-std , Range: -1 1 
->>> Col #  36 , Name:  tGravityAccMag-mean , Range: -1 1 
->>> Col #  37 , Name:  tGravityAccMag-std , Range: -1 1 
->>> Col #  38 , Name:  tBodyAccJerkMag-mean , Range: -1 1 
->>> Col #  39 , Name:  tBodyAccJerkMag-std , Range: -1 1 
->>> Col #  40 , Name:  tBodyGyroMag-mean , Range: -1 1 
->>> Col #  41 , Name:  tBodyGyroMag-std , Range: -1 1 
->>> Col #  42 , Name:  tBodyGyroJerkMag-mean , Range: -1 1 
->>> Col #  43 , Name:  tBodyGyroJerkMag-std , Range: -1 1 
->>> Col #  44 , Name:  fBodyAcc-mean-X , Range: -1 1 
->>> Col #  45 , Name:  fBodyAcc-mean-Y , Range: -1 1 
->>> Col #  46 , Name:  fBodyAcc-mean-Z , Range: -1 1 
->>> Col #  47 , Name:  fBodyAcc-std-X , Range: -1 1 
->>> Col #  48 , Name:  fBodyAcc-std-Y , Range: -1 1 
->>> Col #  49 , Name:  fBodyAcc-std-Z , Range: -1 1 
->>> Col #  50 , Name:  fBodyAcc-meanFreq-X , Range: -1 1 
->>> Col #  51 , Name:  fBodyAcc-meanFreq-Y , Range: -1 1 
->>> Col #  52 , Name:  fBodyAcc-meanFreq-Z , Range: -1 1 
->>> Col #  53 , Name:  fBodyAccJerk-mean-X , Range: -1 1 
->>> Col #  54 , Name:  fBodyAccJerk-mean-Y , Range: -1 1 
->>> Col #  55 , Name:  fBodyAccJerk-mean-Z , Range: -1 1 
->>> Col #  56 , Name:  fBodyAccJerk-std-X , Range: -1 1 
->>> Col #  57 , Name:  fBodyAccJerk-std-Y , Range: -1 1 
->>> Col #  58 , Name:  fBodyAccJerk-std-Z , Range: -1 1 
->>> Col #  59 , Name:  fBodyAccJerk-meanFreq-X , Range: -1 1 
->>> Col #  60 , Name:  fBodyAccJerk-meanFreq-Y , Range: -1 1 
->>> Col #  61 , Name:  fBodyAccJerk-meanFreq-Z , Range: -1 1 
->>> Col #  62 , Name:  fBodyGyro-mean-X , Range: -1 1 
->>> Col #  63 , Name:  fBodyGyro-mean-Y , Range: -1 1 
->>> Col #  64 , Name:  fBodyGyro-mean-Z , Range: -1 1 
->>> Col #  65 , Name:  fBodyGyro-std-X , Range: -1 1 
->>> Col #  66 , Name:  fBodyGyro-std-Y , Range: -1 1 
->>> Col #  67 , Name:  fBodyGyro-std-Z , Range: -1 1 
->>> Col #  68 , Name:  fBodyGyro-meanFreq-X , Range: -1 1 
->>> Col #  69 , Name:  fBodyGyro-meanFreq-Y , Range: -1 1 
->>> Col #  70 , Name:  fBodyGyro-meanFreq-Z , Range: -1 1 
->>> Col #  71 , Name:  fBodyAccMag-mean , Range: -1 1 
->>> Col #  72 , Name:  fBodyAccMag-std , Range: -1 1 
->>> Col #  73 , Name:  fBodyAccMag-meanFreq , Range: -1 1 
->>> Col #  74 , Name:  fBodyBodyAccJerkMag-mean , Range: -1 1 
->>> Col #  75 , Name:  fBodyBodyAccJerkMag-std , Range: -1 1 
->>> Col #  76 , Name:  fBodyBodyAccJerkMag-meanFreq , Range: -1 1 
->>> Col #  77 , Name:  fBodyBodyGyroMag-mean , Range: -1 1 
->>> Col #  78 , Name:  fBodyBodyGyroMag-std , Range: -1 1 
->>> Col #  79 , Name:  fBodyBodyGyroMag-meanFreq , Range: -1 1 
->>> Col #  80 , Name:  fBodyBodyGyroJerkMag-mean , Range: -1 1 
->>> Col #  81 , Name:  fBodyBodyGyroJerkMag-std , Range: -1 1 
->>> Col #  82 , Name:  fBodyBodyGyroJerkMag-meanFreq , Range: -1 1 
+>>> Col #  2 , Name:  subject_id 
+>>> Col #  3 , Name:  tBodyAcc-mean-X_ave 
+>>> Col #  4 , Name:  tBodyAcc-mean-Y_ave 
+>>> Col #  5 , Name:  tBodyAcc-mean-Z_ave 
+>>> Col #  6 , Name:  tBodyAcc-std-X_ave 
+>>> Col #  7 , Name:  tBodyAcc-std-Y_ave 
+>>> Col #  8 , Name:  tBodyAcc-std-Z_ave 
+>>> Col #  9 , Name:  tGravityAcc-mean-X_ave 
+>>> Col #  10 , Name:  tGravityAcc-mean-Y_ave 
+>>> Col #  11 , Name:  tGravityAcc-mean-Z_ave 
+>>> Col #  12 , Name:  tGravityAcc-std-X_ave 
+>>> Col #  13 , Name:  tGravityAcc-std-Y_ave 
+>>> Col #  14 , Name:  tGravityAcc-std-Z_ave 
+>>> Col #  15 , Name:  tBodyAccJerk-mean-X_ave 
+>>> Col #  16 , Name:  tBodyAccJerk-mean-Y_ave 
+>>> Col #  17 , Name:  tBodyAccJerk-mean-Z_ave 
+>>> Col #  18 , Name:  tBodyAccJerk-std-X_ave 
+>>> Col #  19 , Name:  tBodyAccJerk-std-Y_ave 
+>>> Col #  20 , Name:  tBodyAccJerk-std-Z_ave 
+>>> Col #  21 , Name:  tBodyGyro-mean-X_ave 
+>>> Col #  22 , Name:  tBodyGyro-mean-Y_ave 
+>>> Col #  23 , Name:  tBodyGyro-mean-Z_ave 
+>>> Col #  24 , Name:  tBodyGyro-std-X_ave 
+>>> Col #  25 , Name:  tBodyGyro-std-Y_ave 
+>>> Col #  26 , Name:  tBodyGyro-std-Z_ave 
+>>> Col #  27 , Name:  tBodyGyroJerk-mean-X_ave 
+>>> Col #  28 , Name:  tBodyGyroJerk-mean-Y_ave 
+>>> Col #  29 , Name:  tBodyGyroJerk-mean-Z_ave 
+>>> Col #  30 , Name:  tBodyGyroJerk-std-X_ave 
+>>> Col #  31 , Name:  tBodyGyroJerk-std-Y_ave 
+>>> Col #  32 , Name:  tBodyGyroJerk-std-Z_ave 
+>>> Col #  33 , Name:  tBodyAccMag-mean_ave 
+>>> Col #  34 , Name:  tBodyAccMag-std_ave 
+>>> Col #  35 , Name:  tGravityAccMag-mean_ave 
+>>> Col #  36 , Name:  tGravityAccMag-std_ave 
+>>> Col #  37 , Name:  tBodyAccJerkMag-mean_ave 
+>>> Col #  38 , Name:  tBodyAccJerkMag-std_ave 
+>>> Col #  39 , Name:  tBodyGyroMag-mean_ave 
+>>> Col #  40 , Name:  tBodyGyroMag-std_ave 
+>>> Col #  41 , Name:  tBodyGyroJerkMag-mean_ave 
+>>> Col #  42 , Name:  tBodyGyroJerkMag-std_ave 
+>>> Col #  43 , Name:  fBodyAcc-mean-X_ave 
+>>> Col #  44 , Name:  fBodyAcc-mean-Y_ave 
+>>> Col #  45 , Name:  fBodyAcc-mean-Z_ave 
+>>> Col #  46 , Name:  fBodyAcc-std-X_ave 
+>>> Col #  47 , Name:  fBodyAcc-std-Y_ave 
+>>> Col #  48 , Name:  fBodyAcc-std-Z_ave 
+>>> Col #  49 , Name:  fBodyAcc-meanFreq-X_ave 
+>>> Col #  50 , Name:  fBodyAcc-meanFreq-Y_ave 
+>>> Col #  51 , Name:  fBodyAcc-meanFreq-Z_ave 
+>>> Col #  52 , Name:  fBodyAccJerk-mean-X_ave 
+>>> Col #  53 , Name:  fBodyAccJerk-mean-Y_ave 
+>>> Col #  54 , Name:  fBodyAccJerk-mean-Z_ave 
+>>> Col #  55 , Name:  fBodyAccJerk-std-X_ave 
+>>> Col #  56 , Name:  fBodyAccJerk-std-Y_ave 
+>>> Col #  57 , Name:  fBodyAccJerk-std-Z_ave 
+>>> Col #  58 , Name:  fBodyAccJerk-meanFreq-X_ave 
+>>> Col #  59 , Name:  fBodyAccJerk-meanFreq-Y_ave 
+>>> Col #  60 , Name:  fBodyAccJerk-meanFreq-Z_ave 
+>>> Col #  61 , Name:  fBodyGyro-mean-X_ave 
+>>> Col #  62 , Name:  fBodyGyro-mean-Y_ave 
+>>> Col #  63 , Name:  fBodyGyro-mean-Z_ave 
+>>> Col #  64 , Name:  fBodyGyro-std-X_ave 
+>>> Col #  65 , Name:  fBodyGyro-std-Y_ave 
+>>> Col #  66 , Name:  fBodyGyro-std-Z_ave 
+>>> Col #  67 , Name:  fBodyGyro-meanFreq-X_ave 
+>>> Col #  68 , Name:  fBodyGyro-meanFreq-Y_ave 
+>>> Col #  69 , Name:  fBodyGyro-meanFreq-Z_ave 
+>>> Col #  70 , Name:  fBodyAccMag-mean_ave 
+>>> Col #  71 , Name:  fBodyAccMag-std_ave 
+>>> Col #  72 , Name:  fBodyAccMag-meanFreq_ave 
+>>> Col #  73 , Name:  fBodyBodyAccJerkMag-mean_ave 
+>>> Col #  74 , Name:  fBodyBodyAccJerkMag-std_ave 
+>>> Col #  75 , Name:  fBodyBodyAccJerkMag-meanFreq_ave 
+>>> Col #  76 , Name:  fBodyBodyGyroMag-mean_ave 
+>>> Col #  77 , Name:  fBodyBodyGyroMag-std_ave 
+>>> Col #  78 , Name:  fBodyBodyGyroMag-meanFreq_ave 
+>>> Col #  79 , Name:  fBodyBodyGyroJerkMag-mean_ave 
+>>> Col #  80 , Name:  fBodyBodyGyroJerkMag-std_ave 
+>>> Col #  81 , Name:  fBodyBodyGyroJerkMag-meanFreq_ave 
 ```
+
