@@ -56,10 +56,10 @@ tBodyAccJerkMean
 tBodyGyroMean
 tBodyGyroJerkMean
 ```
-```
 # Average of Mean and Standard Deviation Data Sets 
 
-## Structure Information Header 
+## Structure Information Header
+```
 'data.frame':	180 obs. of  81 variables:
  $ activity                         : Factor w/ 6 levels "LAYING","SITTING",..: 4 6 5 2 3 1 4 6 5 2 ...
  $ subject_id                       : Factor w/ 30 levels "1","10","11",..: 1 1 1 1 1 1 12 12 12 12 ...
