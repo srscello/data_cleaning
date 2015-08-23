@@ -11,4 +11,4 @@ The files in this repository are used to clean and modify the data for the activ
 - run_analysis.R: The R file used to analyze the data files and create the tidy data set
 - tidy_data_summary.txt: The output file containing the average selected feature
                         values for each subject and activity
-- codebook.md: The codebook that describes the data
+- CodeBook.md: The codebook that describes the data
