@@ -1,3 +1,11 @@
+## Summary of Original Data
+1. The original data was analyzed and summarized by taking the average value for each subject and activity.
+2. The data was sampled to obtain only those original data that were mean or standard deviations of the data.
+3. A description of the average column data appears at the end of this document.
+4. Each row contains mean or standard deviation measurments averaged over the replicates for each subject for a given activity.
+5. There are 3o subject, and six activities, for a total of 180 rows.
+6. Each original data feature name was simplified and the subscript "_ave" was added to indicate it was a mean value
+
 Feature Selection 
 =================
 
