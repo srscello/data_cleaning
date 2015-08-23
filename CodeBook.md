@@ -5,6 +5,7 @@
 4. Each row contains mean or standard deviation measurments averaged over the replicates for each subject for a given activity.
 5. There are 30 subject, and six activities, for a total of 180 rows.
 6. Each original data feature name was simplified and the subscript "_ave" was added to indicate it was a mean value
+7. The six activities are indicatate by both numeric code and text labels
 
 Feature Selection 
 =================
